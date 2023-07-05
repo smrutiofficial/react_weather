@@ -8,7 +8,7 @@ const SearchResult = (data) => {
             <div className='ko1'>
                 <div className='ko2'>
     {tm.map((result,id)=>{
-        {/* const city1=":"; */}
+
         return <a href={result.name}><p key={id}>{result.name}</p></a>
     })}
                 </div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const Weather_wrap = (data) => {
+const WeatherWrap = (data) => {
   const [staqi, setStaqi] = useState('');
   const [col, setCol] = useState('');
 
@@ -56,4 +56,4 @@ const Weather_wrap = (data) => {
     </div>
   )
 }
-export default Weather_wrap;
+export default WeatherWrap;

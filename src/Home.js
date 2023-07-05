@@ -1,15 +1,14 @@
-import React from "react";
-import axios from 'axios';
-import Air_and_wind from './components/air_and_wind';
-import Weather_wrap from './components/weather_wrap';
 import { useEffect, useState } from 'react';
 import { useParams} from "react-router-dom";
+import React from "react";
+import axios from 'axios';
+import AirAndWind from './components/AirAndWind';
+import WeatherWrap from './components/WeatherWrap';
 const Home = () => {
   const [myData, setMyData] = useState([]);
   const {city}=useParams();
 
   useEffect(() => {
-
     axios
       .get(`http://api.weatherapi.com/v1/forecast.json?key=15be0e6a88e24c30be5151812231906&q=${city}&aqi=yes`)
       .then((res) => {
@@ -21,7 +20,6 @@ const Home = () => {
         const feelslike = res.data.current.feelslike_c
         const cname = res.data.location.name
         const rname = res.data.location.region
-        {/* ---------------------------------------------------------------*/ }
         const wind_kph = res.data.current.wind_kph
         const wind_degree = res.data.current.wind_degree
         const wind_dir = res.data.current.wind_dir
@@ -58,12 +56,12 @@ const Home = () => {
         // console.log(forecast[0].astro);
         setMyData(list)
       });
-  }, []);
+  }, [city]);
 
   return (
     <>
 
-      <Weather_wrap title={myData[0]}
+      <WeatherWrap title={myData[0]}
         icon={myData[1]}
         temp={myData[2]}
         feelslike={myData[3]}
@@ -72,7 +70,7 @@ const Home = () => {
         Aqi={myData[23]}
       />
       {/*---------------------------------------------------------*/}
-      <Air_and_wind
+      <AirAndWind
         humidity={myData[4]}
         uv={myData[5]}
         wind={myData[6]}

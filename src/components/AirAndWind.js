@@ -1,6 +1,6 @@
 import React from "react";
 
-const air_and_wind = (data) => {
+const AirAndWind = (data) => {
   return (
     <>
 
@@ -48,4 +48,4 @@ const air_and_wind = (data) => {
   )
 }
 
-export default air_and_wind;
+export default AirAndWind;
