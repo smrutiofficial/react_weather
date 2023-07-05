@@ -35,12 +35,12 @@ const Searchbar = () => {
 
         <div className="divq">
           <a href="/">
-            <button className="button"><i class="fas fa-home"></i></button>
+            <button className="button"><i className="fas fa-home"></i></button>
           </a>
         </div>
 
         <div className="divq qset">
-          <button className=""><i class="fas fa-search"></i></button>
+          <button className=""><i className="fas fa-search"></i></button>
           <input
             placeholder="Search For Citys"
             className=""
@@ -50,7 +50,7 @@ const Searchbar = () => {
         </div>
 
         <div className="divq">
-          <button className="button"><a href="/about"><i class="fa-solid fa-mug-hot"></i> About</a></button>
+          <button className="button"><a href="/about"><i className="fa-solid fa-mug-hot"></i> About</a></button>
         </div>
 
       </div>

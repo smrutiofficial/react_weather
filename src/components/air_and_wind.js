@@ -24,7 +24,7 @@ const air_and_wind = (data) => {
             <h1 className="font-bold tr3"> Wind</h1>
             <p><i className="uil uil-wind"></i> Wind_Kph <span className="ty45">{data.wind}</span></p>
             <p><i className="uil uil-celsius"></i> wind_degree <span className="ty45">{data.wind_degree}</span></p>
-            <p><i class="fas fa-skiing"></i> wind_dir <span className="ty45">{data.wind_dir}</span></p>
+            <p><i className="fas fa-skiing"></i> wind_dir <span className="ty45">{data.wind_dir}</span></p>
             <p><i className="uil uil-compress-point"></i> Pressur_in <span className="ty45">{data.pressur_in}</span></p>
             <p><i className="uil uil-cloud"></i> cloud <span className="ty45">{data.cloud}</span></p>
             <p><i className="uil uil-rainbow"></i> uv <span className="ty45">{data.uv}</span></p>
