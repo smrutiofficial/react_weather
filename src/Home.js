@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get(`https://api.weatherapi.com/v1/forecast.json?key=15be0e6a88e24c30be5151812231906&q=${city}&aqi=yes`)
+      .get(`http://api.weatherapi.com/v1/forecast.json?key=15be0e6a88e24c30be5151812231906&q=${city}&aqi=yes`)
       .then((res) => {
 
         const wtitle = res.data.current.condition.text
