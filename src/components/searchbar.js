@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+// const axios = require("axios")
 import SearchResult from "./SearchResult";
 
 const Searchbar = () => {
@@ -8,13 +9,11 @@ const Searchbar = () => {
 
   const fetchData = (value) => {
 
-    const sapi1 = `http://api.weatherapi.com/v1/search.json?key=15be0e6a88e24c30be5151812231906&q=`;
-    const sapi = sapi1.concat(value);
+    const sapi = `http://api.weatherapi.com/v1/search.json?key=15be0e6a88e24c30be5151812231906&q=${value}`;
     axios
       .get(sapi)
       .then((res) => {
         const result = res.data
-        // console.log(sapi)
         setRlist(result);
         console.log(rlist);
       })
