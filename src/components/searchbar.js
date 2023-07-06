@@ -9,7 +9,7 @@ const Searchbar = () => {
 
   const fetchData = (value) => {
 
-    const sapi = `http://api.weatherapi.com/v1/search.json?key=15be0e6a88e24c30be5151812231906&q=${value}`;
+    const sapi = `https://api.weatherapi.com/v1/search.json?key=15be0e6a88e24c30be5151812231906&q=${value}`;
     axios
       .get(sapi)
       .then((res) => {
