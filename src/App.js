@@ -15,6 +15,8 @@ function App() {
             <title>Weather app</title>
             <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"></link>
             <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'></link>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
           </Helmet>
           <section>
             <Searchbar />
