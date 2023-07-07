@@ -41,7 +41,7 @@ const Hero = () => {
         {/* cercle 2* */}
         <div className='cercle'>
           {/* --------------------------------------- */}
-
+{/* gif part */}
           {/* ----------------------------------------------------------- */}
           <img className='gif' src={Weather} alt='Loading ....' />
 
