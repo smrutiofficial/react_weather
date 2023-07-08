@@ -6,7 +6,7 @@ const AirAndWind = (data) => {
 
 
       <div className="wraper_div">
-        <div className="airwrap">
+        <div className="airwrap gy2">
 
           <div className="astro">
             <h1 className="font-bold tr3">Astro Events</h1>

@@ -125,16 +125,22 @@ input:focus {
 }
 
 .gy {
-  background: url(./images/landscape_background1.jpg);
+  background: url(./images/er1023439.png);
   /* background-color: rgba(0,0,0,0.4); */
-  background-position: 0cap -12cap;
+  background-position: 0cap -18cap;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-
+.gy2{
+  background: url(./images/1145374.jpg);
+  /* background-color: rgba(0,0,0,0.4); */
+  background-position: 0cap -12cap;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .tspace {
   letter-spacing: 2px;
 }
