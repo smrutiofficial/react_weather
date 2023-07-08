@@ -36,7 +36,7 @@ const WeatherWrap = (data) => {
     <div className="wraper_div">
       <div className="airwrap gy">
         <div className='dfix'>
-          <div className=''>
+          <div className='t6y'>
             <h1 className='text-white font-bold t1 tu6'>{data.title}</h1>
             <h1 className='text-white t3'><i className="uil uil-user-location"></i> {data.cname},{data.rname}</h1>
             <h1 className="text-white font-bold t3 tspace"><i className="uil uil-temperature-minus"></i> feelslike {data.feelslike}<span>&deg;c</span></h1>

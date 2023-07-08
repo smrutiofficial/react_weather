@@ -4,7 +4,7 @@ const Services = (data) => {
     return (
         <div className='service-container'>
             <h1 className='icon-service'>
-                <span class="material-icons">
+                <span className="material-icons">
                     {data.icon}
                 </span>
             </h1>

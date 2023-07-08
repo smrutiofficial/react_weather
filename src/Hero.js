@@ -1,8 +1,9 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import Services from './components/Services';
 import Weather from './images/weather.gif'
 
 const Hero = () => {
+
   return (
     <div className='wrap-div'>
       <div className='in-wrap-div'>

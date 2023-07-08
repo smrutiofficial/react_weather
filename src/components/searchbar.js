@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import axios from "axios";
 // const axios = require("axios")
 import SearchResult from "./SearchResult";
 
 const Searchbar = () => {
   const [input, setInput] = useState("");
-  const [rlist,setRlist] =useState([]);
+  const [rlist, setRlist] = useState([]);
 
   const fetchData = (value) => {
 
@@ -26,8 +26,14 @@ const Searchbar = () => {
     setInput(value);
     fetchData(value);
   }
-
-
+  const inputRef = useRef();
+  const focusinput = () => {
+    // console.log("hello");
+    inputRef.current.focus();
+  }
+const disfocus =()=>{
+  console.log("disfocus");
+}
   return (
     <>
       <div className="nav">
@@ -42,8 +48,10 @@ const Searchbar = () => {
           <button className=""><i className="fas fa-search"></i></button>
           <input
             placeholder="Search For Citys"
-            className=""
             value={input}
+            ref={inputRef}
+            onMouseEnter={focusinput}
+            onMouseDown={disfocus}
             onChange={(e) => handleChange(e.target.value)}
           />
         </div>
@@ -55,7 +63,7 @@ const Searchbar = () => {
       </div>
       {/* ------------------------------------------------------------------------------------------------ */}
       <div className="searchresult">
-        <SearchResult names={rlist}/>
+        <SearchResult names={rlist} />
       </div>
     </>
 
